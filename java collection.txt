@@ -1,0 +1,94 @@
+ java collection
+
+list of objects(elements).
+some ordered / onordered
+duplicate/not duplicate
+
+it provides more sub-interface of collection-SET and LIST.
+
+SET- no duplicate,no order maintained
+LIST - insertion order maintained, allowed duplicates.
+LIST(ArrayList,LinkedList) 
+ArrayList- resizable-array.Heterogenous objects are allowed.(string, number,boolean).
+
+class-package, constructor,methods,variables.
+ArrayList()-initial capacity 10. (it will create an array), - integer object.- it is boolean type so it will give true or false value.
+
+contains("");- check the value.
+get("9");-get the value.
+remove("")- remove the value.
+set(5,"sandeep"); - set the value in particular index
+indexOf(); - it will give you the position.
+sort();-> it will sort the value
+binarySearch(filename, "e"); -> it will search 
+
+//COPY THE ARRAY INTO ANOTHER ARRAY.
+ArrayList firstarray = new ArrayList();
+a12.addAll(firstarray);
+
+//ADD THE ARRAY TO ANOTHER ARRAY FROM 1ST POSITION.
+
+a13.addAll(3,a12)l; a13-it is output array.
+
+//SPLIT THE ARRAY AND SAVE THAT ARRAY TO ANOTHER NAME.
+List a14 = a13.subList(0,4); subList-split the array.
+
+
+
+
+get() and remove()- both will return us the particular element. get will not remove. remove will remove
+
+
+LinkedList - element insertion/deletion is faster, element retrieval is not faster.
+
+ArrayList: element retrieval is faster
+LinkedList ll = new LinkedList();
+ll.add(5);
+ll.add(10);
+ll.add(15);
+ll.add(20);
+sysout(ll);->o/p= [5,10,15,20]
+ll.addFirst(100); -> add in first
+sysout; -> o/p= [100,5,10,25,20]
+sysout(ll.pol());->it will remove except first.o/p= 100
+
+
+
+
+
+CURSOR->retrieving object one by one.
+
+
+
+
+SET->no duplicates & no order maintained.
+
+SET->HashSet(no order,no insertion maintain),LinkedHashSet(order, insertion maintain)
+
+HashCode verify - for no duplicates - its called hashing algorithm.
+
+HashTable->store the hashcode->this process name is hashing
+
+
+SET has a Sub-Interface. that is SortedSet->NavigableSet->TreeSet(maintain the sorted order)
+
+
+//CONVERT THE LIST INTO ARRAY.
+ ll.toArray();
+
+
+SET->SortedSet(sub-interface)-it has a headSet(first)& tailSet(last)
+TreeSet- it will print sorted ascending order. no heterogenous method allowed.
+
+
+
+
+
+MAP - not a sub interface of collection. preparing group of objects.
+
+
+MAP->HashMap(no order maintain)
+put("sandeep", 100)-> give value.
+KeySet()->get only key value("sandeep")
+Values()-> get only values(100)
+entrySet()-> print only entries([sandeep,100])
